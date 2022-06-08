@@ -1,0 +1,35 @@
+
+CS-102-01
+Kutay Şenyiğit 21902377
+15 FEB 2021
+5-6 hour
+Status: Working
+
+I added  three extra variable to Hangman class  String[] process, boolean isWon; String[] words;
+	I added process array to print proccesing word properly. tryThis method was not working.
+	I added isWon boolean to trace whether game over is shown by wining or loosing
+	I added words array to take words from text file.
+
+I added two extra methods to Hangman class and these are updateKnownSoFar and readTextFile()
+
+updateKnownSoFar() = 
+This method updates the process of the word.
+Does not return anything.
+
+
+readTextFile() = 
+This method updates the process of the word.					    
+In order to use this method you should change the pathname to where words.txt is exist.
+In words.txt file words should be separated with spaces Exp: "game ball".
+
+
+I fixed some methods according to requirements:
+
+
+I fixed Trythis method to return "-1" , "-2" , "-3" depending on letter's situations.( if the letter is not valid (-1), if the letter was already used (-2), and indicate if game over (-3).)
+I added isKnown boolean to fix numberOfIncorrect tries in Trythis method. 
+I fixed isGameOver method to trace whether game over is shown by wining or loosing.
+In main method I fixed the bug occurs when the game over. It was not printing the correct answer.
+I fixed in constructor to make all chars * at the beginning of the game.
+
+     
